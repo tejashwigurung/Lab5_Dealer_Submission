@@ -57,8 +57,14 @@ public class Dealer {
             if (deck.getSize() == 0) {
                 break;
             }
+
+            System.out.println("Dealer hits...");
+
             Card dealtCard = deck.dealCard();
             receiveCard(dealtCard);
+
+            System.out.println("Dealer's hand: " + getHand());
+            System.out.println("Dealer total: " + getHandTotal());
         }
     }
 }
